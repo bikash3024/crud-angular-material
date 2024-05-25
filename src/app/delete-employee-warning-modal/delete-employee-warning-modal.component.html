@@ -1,1 +1,14 @@
-<p>delete-employee-warning-modal works!</p>
+<div class="container p-4">
+  <div class="d-flex justify-content-between">
+    <h4>Are you sure?</h4>
+    <button class="close" (click)="onCancel()">
+      <span>&times;</span>
+    </button>
+  </div>
+
+  <p>Do you really want to delete this employee?</p>
+  <div class="d-flex">
+    <button class="btn btn-secondary m-1" (click)="onCancel()">Cancel</button>
+    <button class="btn btn-danger m-1" (click)="onConfirm()">Delete</button>
+  </div>
+</div>
